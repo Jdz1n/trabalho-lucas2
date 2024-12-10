@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Informações sobre Viagens</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Informações sobre Viagens</h1>
+    <p>Deseja saber mais sobre os destinos? <a href="#destinos">Clique aqui para ir à seção de destinos.</a></p>
+    <p>Para reservar passagens, visite nosso parceiro <a href="https://www.expedia.com" target="_blank">Expedia</a>.</p>
+
+    <h2>Calendário de Promoções</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Mês</th>
+                <th>Promoção</th>
+                <th>Desconto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Janeiro</td>
+                <td>Promoção de Verão</td>
+                <td>30%</td>
+            </tr>
+            <tr>
+                <td>Julho</td>
+                <td>Promoção de Inverno</td>
+                <td>25%</td>
+            </tr>
+            <tr>
+                <td>Dezembro</td>
+                <td>Fim de Ano</td>
+                <td>40%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Imagens dos Destinos</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtuy7-cAorwfdzrLMnX7h5lTYqOsaAgWtjRw&s" alt="Fonte">
+    <p>Praia tropical - Um dos destinos mais procurados.</p>
+    <img src="https://vadebike.org/wp-content/uploads/2017/03/Ciclovia-em-Salvador-Av.-Suburbana-1-ok-Foto-Divulgacao.jpg" alt="-Suburbana-1-ok-Foto-Divulgacao ">
+    <p>Montanhas Nevadas - Ideal para amantes do frio.</p>
+
+    <h2 id="destinos">Destinos Populares</h2>
+    <ul>
+        <li>
+            <strong>Rio de Janeiro</strong><br>
+            Cidade famosa por suas praias, como Copacabana e Ipanema, e pelo Cristo Redentor.
+        </li>
+        <li>
+            <strong>Paris</strong><br>
+            Capital da França, conhecida pela Torre Eiffel, museus e gastronomia refinada.
+        </li>
+        <li>
+            <strong>Nova Iorque</strong><br>
+            Cidade vibrante nos EUA, famosa por sua vida cultural, Times Square e a Estátua da Liberdade.
+        </li>
+    </ul>
+
+    <h2>Entre em Contato</h2>
+    <form id="contactForm">
+        <label for="name">Nome Completo:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="destino">Destino Preferido:</label>
+        <select id="destino" name="destino">
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Paris">Paris</option>
+            <option value="Nova Iorque">Nova Iorque</option>
+        </select>
+
+        <label for="message">Sua mensagem:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="button" onclick="submitForm()">Enviar</button>
+    </form>
+<script src="js/script.js"></script>
+</body>
+</html>
